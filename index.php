@@ -6,8 +6,8 @@ Modified @ Yoga HW
 
 require_once('./line_class.php');
 
-$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //sesuaikan 
-$channelSecret = 'YOUR-CHANNEL-SECRET-CODE';//sesuaikan
+$channelAccessToken = 'BAvONNMjE0Z0zdIPLniEZ3GQUJ8jNiEp0+vhp/kzlxH1IKnBGA6kCpvHPlyYxhwjqSpde89Qxe5v77l828OXQNLjB29J9t0j5DZc+k9RscvNu+T2z3YkM6cDtSRXRdO9T3qjPoJD/hFs8ZT559+ByAdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = 'c7164fcc55923e90ea8eb7c4a499b31a';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -33,7 +33,7 @@ if (count($pesan_datang) > 2) {
     }
 }
 
-if ($type == 'join' || $command == 'menu') {
+if ($type == 'join' || $command == 'Menu') {
     $text = "Assalamualaikum Kakak, aku adalah bot Pencari Arah Kiblat digital, Silahkan kakak kirim lokasi tempat kakak, nanti aku cariin arah kiblat untuk tempat kakak ;)";
     $balas = array(
         'replyToken' => $replyToken,
