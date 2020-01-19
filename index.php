@@ -1,7 +1,7 @@
 <?php
 /*
-Modified @ Farzain - zFz
-2019
+Modified @ Yoga HW
+2020
 */
 
 require_once('./line_class.php');
@@ -33,7 +33,7 @@ if (count($pesan_datang) > 2) {
     }
 }
 
-if ($type == 'join' || $command == '/menu') {
+if ($type == 'join' || $command == 'menu') {
     $text = "Assalamualaikum Kakak, aku adalah bot Pencari Arah Kiblat digital, Silahkan kakak kirim lokasi tempat kakak, nanti aku cariin arah kiblat untuk tempat kakak ;)";
     $balas = array(
         'replyToken' => $replyToken,
